@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lecture 4</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
         </div>
 
         <ul id="nav-list">
-            <li> <a href="" class="nav-list-item">Home</a> </li>
-            <li> <a href="" class="nav-list-item">About</a> </li>
-            <li> <a href="" class="nav-list-item">Services</a> </li>
-            <li> <a href="" class="nav-list-item">Contact</a> </li>
+            <li> <a href="#welcome-wrapper" class="nav-list-item">Home</a> </li>
+            <li> <a href="#feature-wrapper" class="nav-list-item">About</a> </li>
+            <li> <a href="#gallery-wrapper" class="nav-list-item">Services</a> </li>
+            <li> <a href="#contact-wrapper" class="nav-list-item">Contact</a> </li>
         </ul>
 
         <div id="nav-button-container">
@@ -31,10 +32,10 @@
 
             <div class="nav-menu">
                 <ul id="nav-menu-list">
-                    <li> <a href="" class="nav-list-item">Home</a> </li>
-                    <li> <a href="" class="nav-list-item">About</a> </li>
-                    <li> <a href="" class="nav-list-item">Services</a> </li>
-                    <li> <a href="" class="nav-list-item">Contact</a> </li>
+                    <li> <a href="#welcome-wrapper" class="nav-list-item">Home</a> </li>
+                    <li> <a href="#feature-wrapper" class="nav-list-item">About</a> </li>
+                    <li> <a href="#gallery-wrapper" class="nav-list-item">Services</a> </li>
+                    <li> <a href="#contact-wrapper" class="nav-list-item">Contact</a> </li>
                     <li> <button class="nav-button">Login</button> </li>
                 </ul>
             </div>
@@ -97,9 +98,51 @@
     </div>
 
     <div id="contact-wrapper">
-        <form>
+            <h1>Contact Us</h1>
+
+        <form id="form">
+            <div class="contact-section">
+                <label for="name">Name:</label>
+                <input type="text" name="Name" id="name" class="contact-input">
+            </div>
+
+            <div class="contact-section">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="contact-input">
+            </div>
+
+            <div class="contact-section">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" class="contact-input"></textarea>
+            </div>
+
+            <button id="send-button">Send</button>
 
         </form>
+    </div>
+
+    <div id="footer-wrapper">
+        <div>
+            <img src="logo.png" alt="logo" width="150">
+        </div>
+
+        <ul class="contacts">
+            <li> <a href="" class="footer-list-item">Home</a> </li>
+            <li> <a href="" class="footer-list-item">About</a> </li>
+            <li> <a href="" class="footer-list-item">Contact</a> </li>
+            <li> <a href="" class="footer-list-item">Services</a> </li>
+        </ul>
+
+        <ul class="contacts">
+            <li> <a href="" class="footer-list-item">Facebook</a> </li>
+            <li> <a href="" class="footer-list-item">Twitter</a> </li>
+            <li> <a href="" class="footer-list-item">LinkedIn</a> </li>
+            <li> <a href="" class="footer-list-item">Instagram</a> </li>
+        </ul>
+
+        <div id="copy-wrapper">
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </div>
     </div>
 
 </body>
